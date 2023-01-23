@@ -1,0 +1,144 @@
+Agenda : 21-01-2023
+------------
+1.Basic commands
+2.uname
+3.user management
+
+1.Operting system
+2.Types of os
+3.Linux(kernal + GNU)
+4.Linux Distributions
+5.Basic Commands
+
+1.mkdir :- To create a directory
+
+ to create a directory structure 
+
+synatx :- mkdir -p <dire str>
+
+2.ls :- list the files or directory 
+  ls -a :- It will list the all the files along with hiden files
+  ls -l :- It will give us a long list 
+
+3.touch :- Create a file
+4.cd :- change the directory
+  cd .. :- switch back to previous directory
+
+5.pwd :- It will print a present working directory
+6.whoami :- To know about user
+
+7.Editors :-vi/vim/nano
+
+vi :- i(insert-mode) 
+ 
+      esc,shift+:,wq
+
+nano :- ctrl+s (save), Ctrl+x(exit)
+
+
+8.cat :- It is used to display the data of the file
+
+9.cat > file(override) :- Is used to override the old data
+
+10.cat >> file(Append) :- It is used to append the data ,it will store old 
+                          data along with a new data.
+
+11.cp :- It is used to copy the data from one file to another file
+         or one directroy to another directory.
+
+syntax :- cp <source> <destination>
+             <from> <to>
+
+revansiddu :- surendra :- siddu
+
+Task :-
+---------
+asia/india/karanataka
+
+skillrary/qspiders/wddm12 
+
+12.move :- it is used to move the data
+
+synatx :- mv <source> <destination>
+
+dinga,dingi
+
+mv dinga dingi 
+
+13.Remove :- it is used to delete the data
+
+files :- rm <file-name>
+         rm -f <file-name> (to delete forcefully)
+
+Directory :- rmdir <directory-name> :- Empty 
+
+non-empty :- rm -rf <directory-name> 
+
+Recurisivly and forcefully
+
+=====================================================================
+14.uname :- to get a information about my system and operting system,  
+         machine,release,version..
+
+uname :- to know about kernal
+
+uname -o :- to get to know about os
+
+uname -r :- to know about kernal release
+
+uname -v :- To know about version of kernal
+
+uname -m :- to know about a machine 
+
+uname -a :- To get all the information
+=====================================================
+15.cal :- to print a calendr
+
+synatx :- cal 
+          cal <mon> <year>
+          cal <year>
+
+16.date :- print the date with time,day,year
+
+task :- sunday :- 2pm --10am 
+
+Sat Jan 21 03:17:09 UTC 2023
+
+tue jan 10 02:10:08 utc 2023 
+
+User management :-
+------------------
+User management will play a important role in operating system
+IAM :- identity access management 
+
+like me and my brother 
+
+user :- user1
+
+user :- user2 
+
+
+we can create a user in 3 ways 
+
+1.GUI :- Graphical user interface  
+2.CLI :- Command line interpretor 
+3./etc/passwd :- By modifying/editing the file.
+
+1.sudo su :- 
+
+sudo is a super user --Root 
+------------
+
+2.useradd :- To create a user 
+
+synatx :- useradd <user-name>
+
+when we create a user at that time our system will create a directory with 
+a user name in home directory ..
+
+To check whether user is created or not 
+
+vi /etc/passwd 
+cat /etc/passwd
+nano /etc/passwd
+

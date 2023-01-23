@@ -1,0 +1,163 @@
+linux,shell-scripting,git&github,maven,jenkins,agile& Jira.
+
+1.Linux
+
+Agenda :
+-----------
+1.Operating system
+2.History of Linux
+3.What is Linux 
+4.Structure Of Linux
+5.Difference between Linux and windows
+6.Basic Linux commands
+7.User management
+8.File management
+9.Networking commands
+10.Filter commands
+11.Crontab
+
+1.Operating System :-
+---------------------
+I travel for tamilnadu :- Tamil
+
+I need to learn tamil/kannada or else kannada/english
+
+Computer :- Binary Lang or 0101010
+
+Human :- Human Readble lang 
+
+i need to learn binary lang or else software operating system..
+
+
+Operating System is a interface between computer hardware and a
+user to do a spefic task like, file handling,user management,
+input output redirection...
+
+Types of Operating system :
+------------------------------
+1.Windows
+2.Linux
+3.centos
+4.ubuntu
+5.redhat
+6.Macos
+7.fedora
+8.Black-berry 
+
+2 Types of Software:
+----------------------
+1.System software
+2.Application software 
+
+======================================================================
+1.Linux :-
+-----------------------
+History Of linux :
+--------------------
+Linux is developed by Linus Torvald ---1991 in C language 
+
+When he was a degree student 
+
+At he was a student unix operating system
+
+Kernal+GNU :- linux operting system
+
+GNU :- General public licence 
+
+What is Linux :
+------------------
+Linux is a kernal based free and open source operting system
+
+open source :- source code of kernal will 
+
+Linux Distribution/Flaovurs :
+---------------------
+1.ubuntu
+2.centos
+3.Fedora
+4.Solaris
+5.Kali-linux
+6.Redhat ---etc 
+==================================================
+In our Daily life we are using windows but why we need to learn linux
+
+linux :- FREE VERSION,VIRUS LESS,LESS COST,MULTITASKING 
+
+WINDOWS :- PAID VERSION,VIRUS,HIGH COST 
+
+=============================================================
+Commands :
+------------------
+Commands are nothing are but these all are program or utility they are
+going to convert the basic english into a instruction for our system
+
+Basic Commands :-
+-------------------
+1.mkdir :- By using this we are going to create Directory
+
+syntax :- mkdir <dir>
+
+Folder :-Winodws
+Linux :- Directory 
+
+2.I want to check whether directory is created or not 
+
+ls :- list the files or directory present in the working directory 
+ls -a :- List the hiden files along with all the files
+ls -l :- Long List 
+
+3.touch :- We are going to create one file using this command 
+
+synatx :- touch <file-name>
+
+4.cd :- It is used to change the directory 
+
+syntax :- cd <directory-name>
+
+5.pwd :- It is used to check or print the present working directory
+
+synatx :- pwd 
+
+6.whoami :- To check the user
+
+synatx :- whoami
+
+7.nano/vi/vim :- Are editors to modify or edit the file like notepad/editplus 
+
+vi :- 
+synatx :- to open { vi <file-name> }
+
+          to work { change a mode to insert by click on i}
+
+          to close the editor { esc,Shift+:wq} 
+
+8.cat :- I want to check or display the content present inside a file 
+
+synatx :- cat <file-name>
+
+9.cat >> file :- I want to add some content into a file 
+
+syntax :- cat >> file-name  (append) 
+
+10.I dont want a old data but i want to add a new data inside a file 
+
+override the contnet 
+
+synatx :- cat > file-name 
+
+> :- override the old data and a new data .
+
+>> :- Append to add a old data along with a newdata .
+
+
+Assignment :-
+----------------
+1.Types of software
+2.What is Operting system and types of operting system
+3.What is linux,history
+4.Difference between windows and linux 
+5.Basic comamnds with a syntax and example 
+
+
+
+
