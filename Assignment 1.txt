@@ -1,0 +1,50 @@
+Assignment 1:-
+----------------
+1.Types of software
+	Application Software
+	System Software
+
+2.What is Operting system and types of operting system
+> An operating system is a program that controls the execution of application programs and acts as an interface between the user of a computer and the computer hardware.
+	Windows
+	Linux
+	Unix
+	MAC OS
+	Solaris
+	Ubuntu
+
+3.What is linux,history?
+> It started in 1964 in New Jersey when some people of Bell Labs tried to create a multiuser operating system (OS), they worked on it till 1969, after facing lots of failures they withdraw the project. Then a group of five people including Dennis Ritchie and Ken Thompson successfully created an operating system called UNICS(Uniplexed Information and Computing Service), better known as UNIX. They publish this OS as open-source(free to use and edit the codebase).
+
+4.Difference between windows and linux?
+>It is an open-source and free operating system (OS) that provides its users with c compatibility with the user interface and programming interface. It is based on the Unix standards and consists of many elements that are developed separately.
+
+>It is a licensed OS with an inaccessible source code. Windows works pretty well for all users who have very little to no computer knowledge. It is good for commercial use among businesses as well as for personal use- because it is very straightforward and easy to use.
+
+5.Basic comamnds with a syntax and example?
+>  command [options] [arguments.....]
+	Is
+	clear
+	pwd
+	cd
+	cp
+	mv
+	rm
+	grep
+	sort
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
