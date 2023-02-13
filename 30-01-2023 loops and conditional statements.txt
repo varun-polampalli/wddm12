@@ -1,0 +1,257 @@
+Agenda :
+-------------
+1.Looping Statements
+2.Conditional Statements
+
+
+Shell scripting 
+Variables 
+Expressions
+1.Looping Statements :
+-----------------------------
+
+3 types :
+------------
+1.For loop
+2.While Loop
+3.until loop
+
+1.For loop :-
+----------------
+syntax :-
+---------
+for condition 
+{
+statement 
+}
+
+Example :
+--------------
+for var in file1 file2 file3
+do
+echo $var
+done
+
+Example :2
+---------
+echo "enter the number"
+read number 
+for sum in {1..10}
+do
+echo $((sum * number))
+done      
+
+1*1=1
+2*1=2
+3*1=3
+4*1=4
+5
+6
+7
+8
+9
+10
+
+To list the files :
+----------------------
+for i in *
+do
+echo $i
+done 
+
+To display only specific kind of extension :
+---------------------------------------------
+for i in $(ls *.sh)
+do 
+echo $i
+done
+
+
+
+While Loop
+--------------------
+Range 
+
+Login page :- performance testing (1 min :- 10000) 
+
+1 min :- 10000
+
+while loop :- we will specify the range based on that
+              it will perform ...
+
+initnumber -le 10000
+
+Synatx :
+---------
+while condition
+do 
+{
+statements 
+}
+done
+
+Example :
+-----------
+init=3
+while [[ $init -le 10 ]]
+do
+echo $init  
+((init++))
+done
+
+
+-le=less then or equl to 
+1 (init++ == 1+1=2
+             2+1=3
+             3+1=4
+ 
+             9+1=10
+
+example :
+-----------
+By using while loop print a table
+
+echo enter the number
+read number
+
+init=1
+while [[ $init -le 10 ]]
+do
+echo $((init * number))
+((init++))
+done
+
+Until Loop :
+------------
+It will get execute when ever the condition get false 
+
+or 
+
+If the condition is false then only it will execute 
+
+
+i=0
+until [[ $i -eq 4 ]]
+do 
+echo $i
+((i++))
+done
+
+0=4 false
+1=4 false
+2=4 false
+3=4 false
+4=4 true 
+
+==================================================================
+Conditional Statements :
+------------------------
+As the name susggest it will get execute based on the conditions 
+
+1.if statement
+2.if-else statement
+3.else-if statement 
+
+1.if statement :
+-----------------------
+If the condition is true then only it will get excute the task..
+
+syntax :-
+--------
+if condition
+then 
+statement
+fi
+
+Example :
+---------------
+echo enter the number
+read number
+
+if [ $number -lt 100 ]
+then 
+printf $number is less then 100
+fi 
+==========================================
+if-else :
+--------------
+If the condition is true then it will print if statemet if the condition
+is false then it will execute else part 
+
+echo enter name 
+read name 
+
+if [[ $name == "skillrary" ]]
+then 
+echo "you were right"
+else 
+echo "better luck next time"
+fi
+
+Example :
+--------------
+By using if-else statement evaluvate Even-odd number...
+
+
+read number
+
+if [ `expr $number % 2 ` == 1 ]
+then 
+echo "the number is odd"
+else
+echo "even"
+fi  
+
+
+2)10(5
+  10
+-----
+ 00==even
+
+2)7(3
+  6
+===========
+  1===odd
+
+Else-if :
+----------------
+If the condition get false then it will check one more condition
+
+echo "enter the number"
+read number 
+
+if [ `expr $number % 2` == 0 ]
+then 
+
+echo "the number is even"
+
+elif [ `expr $number % 2` == 1 ]
+then 
+
+echo "the number is odd"
+
+fi 
+
+==============================================================================
+  
+Assignment :-
+--------------------
+1.Looping statement 
+  for-1 example
+  while-1 example
+  until-1 example 
+
+2.Conditional Statement 
+
+ if -1 example
+ if-else - 1example
+ else-if -1 example 
+
+
+
+
+
+
+
+
+ 

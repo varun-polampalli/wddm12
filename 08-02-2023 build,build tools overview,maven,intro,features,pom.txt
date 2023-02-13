@@ -1,0 +1,167 @@
+Agenda :
+-----------------
+1.Build
+2.Build Tools Available in the market
+3.Compare Ant,Maven,gradle
+4.Maven
+5.Introduction,Build life cycle 
+6.Plugins and Dependencies 
+
+Linux,shell scripting and git-github 
+
+Planning---Blue print-->Basement
+
+Cement 
+breeks
+water 
+iron 
+
+Building Application :
+-----------------------------
+SDLC : Software Development lifecycle 
+
+Requirment collection
+Feasibility study (Project manager,BA,Finance team,HR,arch)
+Design
+Developing 
+Testing 
+Installation 
+Maiantance
+
+Build : Source code,Dependencies,Librarys all to gether 
+        if we pack it..
+ it is called as a build 
+
+Build Management Tools :
+-----------------------------------
+Build Management tools are Responisble to take care of 
+each and every steps of building a application...
+
+Build Tools Availbale in the market :
+----------------------------------------
+1.Ant
+2.Maven
+3.Gradle
+
+1.Ant as a build tool 
+
+Ant is Developed by apache software foundation 
+It will support for java applications ..
+
+Apache software foundation they come up with new advanced
+Version of Build Tool called maven..
+
+2.Maven Is a build management tool it will take care of 
+building an java application...
+
+Maven will provide us a Project structure...
+
+Maven is Traditional tool....
+
+
+Project : Dependencies 
+
+Test : Junit
+Intall a junit and we need configur junit in the project 
+location 
+
+3.Gradle :-
+-------------------------
+Gradle will support for All the lang (java,c,c#,dotnet)
+
+Maven :
+------------------
+Maven is a powerful project management tool that is based 
+on POM(project Object Model).It is used for Projects build
+dependency and documation..
+It simplies the build process Like ant it is adavnced 
+version of Ant.
+
+Features of Maven :
+------------------
+1.We can Easily Build a project using Maven.
+2.We can add jars and other dependencies of the Project Easaily 
+using the help of maven..
+3.Maven Provides Project information (log Documents, Dependency
+list,unit test reports etc..)
+
+4.Maven is very helpful for a project while Updating central 
+ repository of jars and other Dependenices
+
+Dependenices: 
+----------------------
+Junit  
+
+Plugins :
+--------------------
+To do a speific task we are going to use plugins ...
+
+POM.XML
+----------------
+Project Object Model.Extensible Markup Language ..
+It is a Heart of maven(core part) 
+In this file only we will add a dependeices and plugins 
+
+Maven We are having 3 Types Of Repsoitroy :
+-----------------------------------------------
+1.Local
+2.Central
+3.Maven 
+
+1.Local Repository 
+
+.m2 is maven local repository 
+
+2.Central Repository  :- Maven  Repository
+
+https://mvnrepository.com
+
+ssh -i "pem-file" ec2-user@Ip
+ 
+Maven Build Life cycle :
+--------------------------
+1.Validate :- It will validate the project Structure
+2.Clean :- It will clean the Previous Projects cache.
+3.Compile :- It will convert a java into .class file 
+             (Human redable lang into machine Readable Lang)
+4.Test :- It will test the source code ..
+5.Package :- It will build an project and convert into any
+one of the Executable formates like .jar or .war
+6.Install :- Install will download the .jar file into a local 
+             Repository called .m2
+7.Site :- It will Generate the website Related Documenatation..
+8.Deploy :- It will Deploy the Artifacts ...
+
+Installing Maven :
+--------------------
+step 1 :- Open Browser and Search Maven and choose a Official Website of 
+          Maven and click on Download
+
+step 2 :- Copy the Link 
+
+wget https://dlcdn.apache.org/maven/maven-3/3.9.0/binaries/apache-maven-3.9.0-bin.tar.gz
+
+Step 3 : To extract the tar file 
+ 
+tar xvf apache-maven-3.9.0-bin.tar.gz
+
+Step 4 :Rename the apache-maven-3.9.0 to maven
+
+mv apache-maven-3.9.0 Maven
+
+Step 5 :- change directory to 
+
+cd /Maven/bin
+
+Pwd :- /root/Maven/bin
+
+export PATH=/root/Maven/bin:$PATH
+
+To activate the path : source .bashrc
+
+step 6 :Install java why because maven is wrriten in java 
+
+yum install java-11* -y
+ mvn --version
+
+

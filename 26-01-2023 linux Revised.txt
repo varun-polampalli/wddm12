@@ -1,0 +1,217 @@
+Agenda :
+--------------
+Linux Revision 
+
+User Management :
+------------------
+1.How to create a user
+
+useradd <user-name>
+
+To check whether user is created or not 
+
+/etc/passwd
+
+/ :- it is a root directory of our linux system 
+
+c:- program files,program data 
+
+3.To secure a user 
+
+passwd <user-name>
+
+4.whoami :- to check the user name
+
+5.su - <user-name> :- to login as a user
+
+6.openssl passwd <user-name> :- to encrypt the password for security 
+                                purpose to store..
+
+Group Management :
+------------------------
+1.groupadd <group-name> :- it will create only group .
+
+2.To check whether group is created or not :- 
+
+/etc/group
+
+3.to add a user into a group
+
+usermod -a -G <group-name> <user-name> 
+
+4.To rename a group :
+
+groupmod -n <new-group> <old-group>
+
+5.To remove a user from a group
+
+syntax :- gpasswd -d <user-name> <group-name>
+
+6.How to delete a group 
+
+groupdel <group-name>
+
+=============================================
+Basic commands :
+---------------------
+1.mkdir :- it will create a directory
+
+mkdir <dir-name>
+
+2.touch :- to create a file
+
+touch <file-name>
+
+3.ls :- will list the files and directory present in working directory 
+
+ls -a :- it will give a list of hidden files along with all the files and 
+         directory 
+
+ls -l :- Long list 
+
+4.cd :- to change a directory..
+
+cd <directory>
+
+cd .. :- to switch back to previous directory ..
+
+
+5.How to check a working directory :-
+
+pwd :- present working dirctory.
+
+6.Editors :- vi,nano,vim
+
+i)vi <file-name> 
+
+i :- Change it to insert mode 
+
+esc , :wq
+
+w :- write a data
+
+q :- quite
+
+ii) nano <file-name> 
+
+ctrl+s :- to store/save 
+
+ctrl+x :- To exit from  a editor
+
+7.cat :- to display the content present inside a file 
+
+cat <file-name>
+
+i)cat > file-name :- It will override a old data and store only new-data
+
+ii)I want a old data along with a new data 
+
+cat >> <File-name> :- It will append a data
+
+> :- override the old data
+>> :- Append the data(store a old-data along with new-data)
+
+8.I want to copy a data from one file to another or one directory to another dir
+
+syntax :- cp <source-data> <destination>
+
+          cp file1 new-sample
+
+If the file is present it will utilze a file but if the file is not
+there it will create a new-file.
+
+ii)To Copy the directory from one path to another
+
+synatx :- cp -r <source-dir> <dest-dir>
+
+-----------------------------------------------------
+9.mv :- To move the data 
+
+mv <source> <destination> 
+
+10.To delete the file or directory 
+
+i)rm <file-name>
+
+ii)rmdir :- to delete a Empty directory
+
+iii)rm -rf :- for deleting the file and directory forcefully
+ 
+iv) to delete a Multiple file 
+
+rm * 
+
+v) If you want to delete a .extension files with an intenstion
+
+==================================================================
+File Management :
+------------------
+
+1.File Structore of linux os :-
+--------------------------------------------
+i)/ :- root directory and intial directory in this directory only all the 
+       configuration file will get stored....
+
+ii)/bin :- all the binaries,commands and executable files are stored ..
+
+iii)/etc :- The configuartion Related information is stored inside this 
+            file.....
+
+iv)/home :- In this location when ever we creata a user directory will be
+            created inside this location...
+
+v)/tmp :- Temporavery data 
+
+File permissions :
+--------------------
+GUI
+CLI 
+1.Numeric 
+2.Albetical 
+
+Permissions :-
+-----------------
+read :- r,4
+write :-w,2
+Execute :- x,1
+
+4+2+1 =7 
+
+3 types of user
+
+1.owner
+2.Group
+3.Others
+
+chmod 7     7      7 <file/dir>
+      owner group Others
+
+7:- 4(read)+2(write)+1(execute) 
+
+-rw-  r--    r--
+Owner Group  others
+-wx    x      rwx
+
+chmod  317 file-name
+
+3:-2(write)+1(execute) 
+1:-(execute)
+7:- read+write+execute 
+
+-wx--xrwx
+
+============================================
+Albetics :
+
+= To give a set of permissions
++ To add a permissons 
+- To delete a Permissions 
+
+Example :- chmod u=rx,g+r,o-w
+
+r-x-wxrw-
+
+
+
+
+

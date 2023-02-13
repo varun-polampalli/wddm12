@@ -1,0 +1,170 @@
+Agenda:
+------------
+1.Filter commands
+2.Cronjob
+
+basic commands
+uname 
+user management
+group Management
+Networking commands
+input,output and error redirection
+disk utility
+file management
+ file strcture
+ file compression 
+ file permissions 
+
+1.Filter commands:
+------------------
+1.Head :-It is used to print the statring lines of file
+         by default it will print 10 lines 
+
+syntax :- head <file-name>
+
+i) To print a specific lines
+
+synatx :- head -n <num> file-name 
+     
+          head -num file-name
+
+ii)To print a Specified charcters
+
+synatx :- head -c <num> file-name
+
+2)Tail :- It will display the data from a last line(count the lines from 
+          last line) Default 10 lines 
+
+
+synatx :- tail <file-name>
+
+i) Number of lines :- tail -n <num> file
+
+ii) Number of char :- tail -c <num> file 
+
+3.sort :- To display the data in ascending or descending 
+
+syntax :- sort <file-name> :- ascending order 
+
+          sort -r <file-name> :- Desending order 
+
+4.
+surendra ece 80
+siddu mech 85
+revan civil 70
+ajit cs 75
+ajay cs 90
+rajesh mech 70             head -5 file-name 
+kanthraj mech 75           
+bharath is 68              tail -2 file-name 
+guru vt 78
+durga civil 65
+manu bt 50
+
+head commands output i need to pass as an input to tail command
+
+To achive this task 
+
+4.Pipeline :- To combine a multiple commands and it will pass the output
+              of 1st command as an input to 2nd command
+
+syntax :- cmd1 | cmd2
+
+example :- head -5 students.txt | tail -2 
+
+5.Uniq :- By using this we can display/find the duplicate data
+
+i) I want to count a number of occurance of a char
+
+uniq -c <file>
+
+ii) To print only duplicate data 
+
+uniq -d <file-name>
+ 
+6.find :- It is used to search a speific data 
+
+syntax :- find <file-name>
+
+7.grep :- group regular expression 
+
+syntax :- grep <search-word> <file>
+
+          command | grep <search-file/word>
+
+8.sed (stream editor) :- 
+
+syntax :- sed 's/old-data/new-data/' <file-name>
+
+i)Change a data in entire file 
+
+sed 's/old-data/new-data/' <file-name>
+
+ii) Printing a SED data 
+
+sed 's/old-data/new-data/p' <file-name>
+
+iii) Replace the specific line :
+
+sed '2 s/old-data/new-data/' <file-name>
+
+iv) Replace the data in nth line that data i want to print 
+
+sed '2 s/old-data/new-data/p' <file-name>
+
+v) To delete the specific line :- 
+
+sed '2d' file 
+
+9)awk :- Text processing in linux 
+ 
+         awk is referred as gawk(gnu awk) 
+
+Features :
+-----------------
+1.It scans a file line by line
+2.it formates the output file
+3.it will compare 
+
+syntax :- awk '/{option}' file 
+
+example :- awk '/mech/ {print}' student.txt
+
+*) To print a specified a column :
+
+awk '{print $1,$2}' file-name
+
+*) I want to print a serial number with data 
+
+awk '{print NR,$0}' file-name
+
+10.tr :- Translate 
+
+command | tr old New
+
+example :- echo hello | tr hello HELLO 
+
+           cat student.txt | tr mech MECH 
+
+
+date :-=
+
+date --date="21 jan"
+
+date --date="21 jan 2000"
+
+date --date="10 day ago"
+
+date --date="tomorrow"
+
+
+
+
+
+
+
+
+
+
+
+ 

@@ -1,0 +1,168 @@
+Agenda :- 24-01-2023
+
+1.Networking commands
+2.disk utility
+3.file compression formates
+4.Filter commands 
+5.Input output and error Redirection
+
+1.Networking Commands :-
+--------------------------
+i)ifconfig :- It is used to display the ip related information.
+
+ii)ping
+
+iii)netstat :- It is used to check the network conncetions,routing table information
+               interface statics,it will be help for debugging a the servers which 
+               all are running which port..
+
+iv)ss(socket statitics) :- It is similar to netstat but addtionally give more info
+                            about tcp.
+
+v)host :- It is used to get a information realted to DNS servers
+
+vi)nslookup :- DNS lookup records.
+
+vii)dig(domain infomation groper) :- DNS lookup
+
+viii)last :- to display the recent login users information 
+
+2.Input output and error Redirection :
+-------------------------------------------
+1.standard input :- It is used to collect the input from the other files 
+
+< stdin :- <
+
+syntax :- command < file
+
+example :- cat < file1
+
+2.Standard Output Redirection :- > or >>
+
+syntax :- stdout 
+
+example :- echo "hello world" >> file-name
+
+           cat file1 >> file2
+
+3.Standard error redirection :
+------------------------------------
+By using this command we are redirecting a error msg to some location 
+to avoid a printing error message in terminal ..
+
+stderr:- 2>
+
+example :- la 2> 
+
+=================================================================================
+3.Disk Utility :
+-------------------
+Disk utility commands are used to easliy monitor the system or storage 
+related information, and to manage disk partitions ....
+
+1.fdisk(fixed-disk)
+
+2.df :- it is used to get the infomration about disk usage..
+
+  df -h :- To display the disk usage in human readable lang...
+
+64gb 
+
+toltal :- 64gb
+
+used :- 44gb
+
+available :- 20gb 
+
+3.parted :- it is used to get a information about a partitions and by using
+            we can create a new partitions also ...
+
+synatx :- parted -l
+
+4.lsblk :- list block 
+=============================================================
+
+File compression formates :
+------------------------------------------
+It is mainly used to compress the file by this the size of the file will get
+Reduce and quality of the file will be remain same...
+
+Why we need to compress the file size 
+
+-> To save the storage space...
+
+--> Easily we can share a of file 
+
+i)tar
+ii)zip
+iii)gzip
+
+1)tar(tape archive):- 
+
+create :- tar cvf <file.tar> <file1 file2 file3>
+
+c :- create 
+v :- verbosly
+f :- file
+
+Example :- tar cvf wddm12.tar siddu.txt revansiddu.txt surendra.txt
+================================================================
+Extract :- tar xvf <file.tar>
+
+x :- Extract 
+v :- verbosly
+f :- file 
+
+example :- tar xvf wddm12.tar
++++++++++++++++++++++++++++++++++++++++++++++
+
+rm *.txt
+rm * 
+2.zip formate :- 
+
+create :- zip <file.zip> <file1 file2 file3>
+
+example :- zip golden-wddm12 revansiddu.txt siddu.txt surendra.txt
+
+Extract :- unzip <file-name>
+
+Example :- unzip golden-wddm12.zip
+=============================================
+
+3.gzip :- For compressing a individul file...
+
+syntax :- gzip <file>
+
+Example :- gzip revansiddu.txt
+
+Extract :-
+
+syntax :- gzip -d <file.gz>
+
+Example :- gzip -d wddm12.tar.gz
+
+
+Assigment :
+---------------------
+1.Use of Networking commands and example
+2.Use of disk utililty commands and example
+3.standard input,output and error redirection exampls(2,2,2)
+4.Why we need to compress the file and types of compression..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

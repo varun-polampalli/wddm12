@@ -1,0 +1,162 @@
+Agenda :
+---------------
+1.git reset
+2.git revert
+3.git tag
+4.git stash
+5.git rebase
+
+
+Branching concepts 
+
+how to create a branch
+
+git branch <branch-name>
+
+how to switch from branch to another
+
+git checkout <branch-name> 
+
+or 
+git switch branch-name 
+
+
+how to merge a changes from one branch to another
+
+master :- file1,file2 
+
+feature :- file1,file2,file3 
+
+merge :- 2 way merging
+============================================================
+Branch :- Branch is nothing but it is part of git repository
+          
+tree :- branches :- 
+
+Branches we will create a supparte branches for each and 
+every Employees
+
+dev1 :- singup 
+dev2 :- login 
+
+Principal :- civil,cs,mech,is,it,ciramic,chemical,marine 
+
+HOD :- civil 
+
+HOD :- cs
+
+HOD :- mech 
+=======================================================
+git reset :
+----------------
+1.we can remove the files from staging area
+2.we can remove the commits 
+
+scenrio :
+--------------
+dev1 is working on singup feature 
+
+firstname :- git add . or git add <file-name>
+
+lastname
+mobile
+address
+pincode
+ 
+1.To change a parent or initial branch
+
+synatx :- git branch -m <branch-name>
+
+To remove the files from staging area 
+
+ syntax :- git reset <file-name>
+
+2.git reset :- by using this we can undo the changes
+
+1.git reset head~1 :- it will remove the files from local 
+    repository along with stagging area and add the files
+   in working directory...
+
+2.git reset --soft head~2
+3.git reset --hard head~3
+
+head is indicating a recent commit 
+
+
+working directory 
+demo :- git add demo 
+
+stagging area
+demo :- git commit -m "msg"
+
+local repository
+demo
+
+2.git reset --soft head~2 :- it will remove the number 
+         of commits which were given ..
+
+3.git reset --hard head~1 :- it will delete the files permanetly 
+         from the git repository..
+
+Drawback :- 
+---------------
+1.By using this we can't able remove the nth commit 
+it will remove only the number of commits..
+
+To overcome the drawbacks of git reset we are using git revert..
+
+2.Git revert :- By using git revert we can remove the nth commit as
+                well..
+
+syntax :- git revert <commit-id>
+
+Note :- it will undo the changes...
+
+
+1st step
+
+2nd step
+=====================================
+
+git tag :- Taggin the importent checkpoints..
+--------------
+In tags we are having 2 types 
+
+1.light weight tag
+
+syntax :- git tag <tag-name> <commit-id>
+
+for commits we are creating a tags 
+
+for example :- we are having multiple 
+
+first-name :- 100 commits
+
+tag :- first-name(v1)
+
+last-name :- 100 commits
+signup :- 50 commits
+login 
+
+syntax :- git tag <tag-name> <commit-id>
+
+ 
+v1 :- v2 
+
+2.Annoteted Tag :-
+---------------------------
+Along with a tag we can add a message for a tag as well
+
+syntax :- git tag -a <tag-name> <commit-id> -m "msg"
+
+
+
+
+
+
+
+
+
+
+
+ 

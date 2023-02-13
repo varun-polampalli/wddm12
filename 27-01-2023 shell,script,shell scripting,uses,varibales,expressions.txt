@@ -1,0 +1,165 @@
+Agenda :
+-------------
+1.Shell scripting 
+2.What is shell 
+3.Use of shell scripting 
+4.How to write a script
+5.Variables 
+
+Shell Scripting :
+--------------------
+1.Programming lang :- c,c++,java,python,dotnet
+
+2.scripting lang :-java script,shell script
+
+3.Markup lang :- html,xml.
+
+1.What is this shell :- 
+------------------------
+Shell is a main part of our kernal when ever user send a request 
+to kernal 1st shell will recive the data and it will execute and
+based on the output it will send an request to kernal in 
+machine readble lang....
+
+2.Scripting :-
+----------------
+Scripting is a lossely coupled code...
+
+in script there is no systax..
+
+what is shell scripting :
+----------------------------
+Shell scripting is a combination of linux commands ,
+it is used to perform a daily task like ,backup
+and also it is used to perform any specific task like 
+instalation...
+
+Types of Shell scripting :
+-----------------------------
+1.bash
+2.ksh :- korn shell 
+3.csh :- it is in written in c lang.
+
+How to write a script :
+-------------------------
+1.The file exetension is .sh
+ 
+touch <file> or vi file
+
+vi <file>
+
+#!/bin/bash 
+
+mkdir <dir>
+ls
+echo "user is"
+whoami
+pwd
+
+:wq
+
+-------------------------------------------
+Variables :
+------------
+Varible is named memory location where we can store
+our data and it can be change n numer of times during
+a execution ..
+
+name siddu 
+
+a=10
+echo $a
+
+In varibles we are having 3 types :
+-------------------------------------
+1.Environmental variables
+2.System variables
+3.User defined variables 
+
+1.Environmant variables ..
+
+i)env
+ii)readonly 
+
+Example on readonly
+
+#!/bin/bash
+
+x=15
+echo $x
+readonly x
+x=20
+echo $x
+
+Example on unset :
+--------------------
+b=25
+unset b
+echo $b
+
+System Defined Variables:-
+--------------------------------
+echo $PWD
+echo $LS
+echo ${HOME}
+echo ${OSTYPE}
+echo $PATH
+echo ${$} ---It will print the process id.
+echo $PWD
+echo $HOSTNAME
+echo $UID
+
+User Defined Variables :
+----------------------------
+User defined varibales are nothing but user will set a value for the
+Variables..
+
+name=revansiddu
+age=24 
+echo my name is $name and age is $age
+
+name=surendra
+age=25
+echo my name is $name
+sleep 5
+echo age is $age
+Expressions :
+-----------------
+1.Arithemetic Opertions :- +,-,*,/,%,=,!=.
+
+2.Logical Operators:-
+
+i.-eq :- Equality condtion 
+2.-ne :- not equl
+3.-gt :- greater then
+4.-ge :- Greater then/equal to
+5.-lt := Less then
+6.-le :- less then or equal to 
+
+Arithmetic :
+=================
+var1=10 
+var2=20
+sum=`expr $var1 + $var2`
+echo $sum
+
+var1=14
+var2=20
+sum=$((var1 + var2))
+echo $sum
+
+String Operations :
+-----------------------
+name=karnataka
+len=`expr length $name`
+echo $len 
+
+
+
+
+
+
+
+
+
+

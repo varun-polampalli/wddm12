@@ -1,0 +1,217 @@
+Agenda :
+-----------
+1.Array
+2.Case-esac
+3.Functions
+4.cronjob
+
+1.Array :
+--------------
+An array is a collection of items of some data type stored at contigous
+memory location...
+example :
+------------
+arr=(revan siddu surendra ajit) 
+      0      1     2        3
+echo ${arr[@]:0}
+
+echo ${arr[@]:1}
+echo ${arr[@]:2}
+echo ${arr[@]:3}
+
+echo ${arr[0]//r/R}   #To print a specific value and replace the value
+====================================================
+Case-esac (switch) Statement :
+------------------------------------
+By using this we can choose a specific option like a mcq
+
+a b c d
+
+=====================================
+echo "enter a fruit name"
+read fruit
+case $fruit in
+apple) 
+echo "this a apple"
+;;
+orange)
+echo "this is orange"
+;;
+mango)
+echo "this is mango"
+;;
+*)
+echo "the fruit is not avilable"
+;;
+esac
+
+==================================================================
+Example :- 2 Calculator 
+
+echo "enter a opration"
+read opr
+case $opr in 
+
++)
+echo enter a values for a and b 
+read a 
+read b
+echo `expr $a + $b`
+;;
+
+-)
+echo enter the values for c and d
+read c
+read d
+echo `expr $c - $d`
+;;
+
+\*)
+echo enter the values for x and y
+read x
+read y
+echo `expr $x \* $y`
+;;
+/)
+echo enter the values for e and f
+read e 
+read f 
+echo `expr $e / $f`
+;;
+
+*) 
+echo "no opertions available"
+;;
+esac 
+
+=======================================================================
+When developer is writing a source code for the application 
+
+1000 lines together source code will be there 
+
+We are going devide then into multiple blocks called functions 
+
+Functions :
+---------------
+Function is a group of statement it will get execute when ever it is called or invoked 
+
+
+Example :
+------------
+
+sum()
+{
+echo add a values for a and b
+read a
+read b
+x=`expr $a + $b`      #command line arguments
+echo $x
+}
+
+sum 
+=====================================================
+Example 2 :
+---------------
+nginx :- install,configur
+
+install()
+{
+echo "installing nginx"
+echo $FUNCNAME
+}
+
+config()
+{
+echo "configuring nginx server"
+echo $FUNCNAME
+}
+
+#calling block 
+
+install 
+config 
+
+Local and global variable :
+----------------------------
+President :- Global 
+CM :- local 
+
+pkg=tomcat            #GLOBAL VARIABLE 
+
+install()
+{
+echo "install $pkg"
+echo function name is $FUNCNAME
+}
+
+config()
+{
+pkg=nginx          #LOCAL VARIABLE
+echo "config the $pkg"
+echo $FUNCNAME
+}
+
+install
+config
+
+=======================================================================================
+
+Command line arguments :
+---------------------------
+
+name=$1
+age=$2
+
+echo my name is $name and age is $age
+
+ex :- 2 :
+-----------
+echo $1
+echo $2
+
+cli :
+--------
+sh <file-name.sh> <arguments>
+================================================================
+
+File reading Functionality :
+---------------------------------
+Conting the number of character,Words,and lines in the file.
+
+
+echo enter the file name
+
+read file
+
+char=`cat $file | wc -c`  #to count a character 
+word=`cat $file | wc -w`  #to count the number of words
+
+lines=`grep -c "." $file #count the number of lines 
+
+echo number of character in the $file is $char
+
+echo number of words in the $file is $word
+
+echo number of line in the $file is $lines 
+
+
+
+Assigments :
+------------------
+
+1.By using command line argments compare with each and every topic and one-one example 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

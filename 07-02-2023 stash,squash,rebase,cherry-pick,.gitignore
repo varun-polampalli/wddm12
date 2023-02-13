@@ -1,0 +1,145 @@
+Agenda :
+-----------
+1.Git Stash
+2.Git cherry-pick
+3.Git rebase
+4.Git squash
+
+
+1000 commits are there 
+in this commits i need to check 
+
+v1-v2-v3
+
+singup :  20 commits --Functionality of singup branch is
+          working fine...it is completely ready
+
+20 : tag singup 
+
+Developer are working on some feature 
+
+developer as commited one commmit 
+
+tag :- Review 
+
+it is used to tag the importent checkpoints 
+Git Stash:
+--------------
+Scenario :
+----------------
+Dev1 and Dev2 
+
+Dev1 is working on Search Feature 
+Dev2 is Working on Buynow Feature 
+Team Lead is Working on Testing the Application
+
+when a Teamlead testing an application at that time he 
+got one blocker defect ..
+
+
+Git Stash :- It is used to store the data for Temporvary
+               
+Commit will store the data for permanent 
+Stash in Temp
+steps :
+--------
+step 1 :- create a two branches (search and buynow)
+step 2 :- create one file in search and add that file to 
+           stagging area
+step 3 :- checkout to buynow and do ls
+step 4 :- checkout to search and stash the file 
+
+2.How to get back the file which we have added in staging area
+
+syntax :- git stash apply 
+
+
+1.git stash :- Used to add the files to staging area
+2.git stash list :- to list the stash list 
+3.git show <stash-id> :- Used to show the stash infomration
+4.git stash apply :- To get back the file from staging area
+                      to working directory..
+5.git stash pop :- it will also work like a apply but it will 
+                   delte the stash history/list 
+
+-----------------------------------------------------------------
+Cherry-pick :
+---------------
+Cherry-pick is an alternative for git merge and rebase 
+
+siddu : search : commit 
+
+surendra : buynow 
+
+It is used to get the commit from one branch to another branch 
+
+By using cherry-pick we can get a commit from one branch to another 
+branch  
+
+syntax :- git cherry-pick <commit-id>
+
+Rebase :
+-------------- 
+It is an Alternative to git merge and git cherry-pick 
+
+Rebase is the importent feature in git by using this we can do 
+do the changes with a commits 
+
+By using rebase we are going to play with a commits ..
+
+Our magnager wants to get a commit history of only search(ajit) branch 
+
+git rebase to get  a only one branch commit history 
+
+rebase is helpful to store the commits in linear way...
+
+When we execute a git rebase a commits will be added on the top the
+base commit of the master branch 
+
+master :- 1001
+
+search :- 1002 
+
+master :- 1003 
+
+git rebase search
+
+master:- 1001,1003
+
+search : 1002
+
+---------------------------------------------
+4.Git Squash :
+---------------
+By using Squash we can add a multiple commits into a single commit  
+
+step 1 :- git rebase -i head~number of commits
+
+step 2 :- it will open the editor just we need change a pick into s 
+
+pick in a main commit which we are going to squash multiple commits 
+into a single commit 
+
+single:- pick 
+
+squash :- s
+*).gitigonre :
+-----------------
+ .gitignore
+
+We are using this file to igonre the files while adding into staging area
+
+
+Assignmet :
+------------
+1.Diff between Git rebase and Merge
+2.Diff between Git rebase and cherry-pick
+3.Diff between Git cherry-pick  and Merge
+4.Use of git stash
+5.Use of git squash
+6.Explain about Git Rebase 
+
+
+
+
+

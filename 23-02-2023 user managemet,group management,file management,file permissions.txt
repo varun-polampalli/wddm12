@@ -1,0 +1,192 @@
+Agenda :23-01-2023
+-----------
+1.User Management
+2.Group Management
+3.File management
+4.Networking Commands
+
+1.User Management :-
+---------------------- 
+Super Market :- billing Counters Workers they will be working 3 shifts 
+                for each and every user he will create a user to count
+                number of bills...
+
+
+
+1.To create a user :
+
+syntax :- useradd <user-name>
+
+2.To Check whether user is created or not/ User file 
+
+path :- /etc/passwd
+
+3.How to secure the user 
+
+synatx :- passwd <user-name>
+
+4.To login as a user/switch
+
+syntax :- su - user-name
+
+Root :- switching to user account it will not ask a password Why because
+        Root user is a person one who created a user and he is a 
+        super user
+
+user wants to switch to another user accont we need to add a password
+for the user...
+
+*) To logout as a user use :- exit 
+
+5.For securing the password we need to Encrypt 
+
+syntax :- openssl passwd <user-name>
+
+6.chage :- To display a password related information 
+
+synatx :- chage -l <user-name>
+
+7.To delete a user 
+
+synatx :- userdel -r <user-name>
+Group Management :
+----------------------
+Developers
+test eng 
+HR
+Finacial team
+
+For maiantiang a users iam going to create a supparate group for users
+
+1.To create a group
+
+syntax :- groupadd <group-name>
+
+2.To check or group file 
+
+syntax :- cat /etc/group
+
+3.To add a user into group 
+
+syntax :- usermod -a -G <group> <user-name>
+
+4.To Rename the group 
+
+syntax :- groupmod -n <new-name> <old-name>
+
+5.Remove a user from group 
+
+syntax :- gpasswd -d <user-name> <group> 
+
+6.To open a file
+
+getent <file-name>
+
+File Management:
+--------------------
+1./ :- root Directory
+
+2./bin :- Binaries (binary files)
+
+cd /bin
+
+ls
+
+
+3./etc :- system COnfiguratin files 
+
+4./home :- Directory for a particular user for system 
+
+5./tmp :- To store Temporary files 
+
+6./opt :- It is dedicated for installing 3rd party applications
+
+7./usr :- In this user programs files
+
+8./var :- subdirectory of root
+
+
+================================================================
+File Permissions :-
+--------------------
+Source code :- modify (dev) --test (read) 
+
+Permissions for users :
+----------------------------
+1.owner permissions
+2.group permissions
+3.other permissions 
+
+File/directory  access modes
+-------------------------------
+1.Read permissions
+2.Write permissions
+3.Execute permissions 
+
+Permissions mode 
+----------------------
+1.Numeric
+2.Alphbets 
+
+
+chmod 777 <file/dir>
+
+7:- owner (4+2+1) 
+7:- group
+7:- other 
+
+4:- read
+2:- write
+1:- execute
+
+-rw-r--r--
+
+3 :- owner
+3:- group
+3 :- other 
+
+rw 
+r
+r
+
+-r---w---x 
+owner :- read :- 4
+group :- write :-2
+other :- execute :- 1
+
+rwx      rwx       rwx
+
+owner(7) group(7) other(7)
+
+task :
+--------
+owner :- read and execute :- 4+1=5
+group :- write :- 2
+other :- read,write,execute :- 4+2+1=7
+
+527
+
+Alphbets :
+----------------
+1.+ :- to add the permssions
+2.- :- To remove the permissions 
+3.=:-  To set a desginated permissions 
+
+r :-read
+w :- write
+x :- execute 
+
+chmod u=rx,g+x,o+r <file-name>
+
+
+Assigment :
+--------------
+1.file permissions :- 5 
+2.directory permssions :- 5
+
+
+
+
+
+
+

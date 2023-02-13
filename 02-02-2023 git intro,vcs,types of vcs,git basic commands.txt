@@ -1,0 +1,196 @@
+Agenda :
+---------------
+1.Git 
+2.version control system
+3.Types of version control system
+4.History 
+5.Basic git commands 
+
+GIT(global information tracker) :
+----------------------------------------
+Git is distributed version control system..
+
+version control system (vcs):
+-----------------------------
+whatsapp :- chats :- v1 
+            chats,calls :- v2
+            chats,calls,status :- v3 Working beautifully 
+            chats,calls,status,payment :- v4 Roll back 
+
+roll back:- When the new update is not working fine at that time easliy
+            we can switch back to older version....
+
+
+childs :- baby sitting
+          lkg,ukg
+          1-10 th 
+          11-12 puc
+          13-16 degree
+
+Software development life cycle 
+
+Requirements
+
+Devlopers starts a writting code 
+
+1st day :- 50 lines of code :- 1 class completed 
+2nd day :- 50 lines 
+
+=========================================================
+Types of version control system :
+----------------------------------------
+1.Local version control system.
+2.Centralised version control system.
+3.Distributed version control system.
+
+1.Local version control system:- 
+--------------------------------------------------
+The updates will be stored in a local system 
+
+Drwaback ;
+-----------------
+If anything happens to the local system the complte source code will be 
+gon there will be no chances of backup and all ...
+
+To oversome this drawback we are havin Centralised version control system 
+
+2.Centralised version control system:-
+---------------------------------------------
+Multiple Devlopers are working with Centralised version control system.
+on the daily basis....
+
+Drawback:-
+----------------
+If anything happens to the central server we will be not having a backup 
+of the sorce code compltely it as gon...... 
+
+3.Distributed version control system:-
+--------------------------------------------
+The source code will be stored among multiple developers they can get 
+a updates of other developers source code...
+
+->No need of internet connection but when they are working with Remote 
+  repository at that time they required a internet connection ...
+
+local  :- only one copy of source code if anything happens to that the system 
+           there is a no chances getting the source ...
+
+central :- Multiple developers can work on the project ..
+
+SVN :- sub version 
+
+distributed :- mutiple developers can work and the source codes mutiple 
+               copy also availble ....
+
+============================================================================
+Git :- Git is developed by linus torvalds in 2005
+
+Linux :- linux is written in c lang  
+
+Repository :
+------------------
+Repository is nothig it is a one kind of directory 
+
+1.working directory :- where we were working ..
+
+Ajit has a written some source code 
+
+2.staging area :- tracking and for review 
+
+3.Local repository
+
+4.Remote Repository
+
+Git commands :
+--------------------
+1.git init :- It is used to create a repositroy in our local system...
+
+syntax :- git init or git init <repository name>
+
+NOTE :- When ever we create a repository at that time local repo will be
+        created with the name of .git ......
+
+2.git status :- it will give us a result on current branch status
+                (whether the files tracking or not)
+
+synatx :- git status
+
+3.git add :- to add a file from working directory to staging area
+
+syntax :- git add <file-name> or git add .
+
+To configure user name and mail id :
+-------------------------------------------------
+4.git config --global user.name "user-name"
+
+5.git config --global user.email "mail-id"
+
+To check whether user name and mail id or set :
+--------------------------------------------------
+6.git config --global user.name
+
+7.git config --global user.email
+
+8.git commit -m "msg"
+
+9.git log or git log --oneline :- to check a commit history
+
+10.To add a remote repo
+
+git remote add origin <url>
+
+11.To check the connection with remote repositroy
+
+git remote -v
+
+12.to push a local changes to remote
+
+git push origin <branch-name>
+
+
+
+
+=====================================================================
+Repostory :- wddm12
+
+1.working directory :-  we have created one file with the name of demo1
+ 
+      demo1 
+
+2. Staging area :- it is like a mock system so here before sotring a version
+                   for review purpose we will a source code here..
+
+     to add a file from working directory to staging area we need to add a 
+     command called
+
+git add <file-name> or git add .(to add all files)
+
+3.local repository :- To store a changes in local repository called .git
+
+To transfer the file from staging area to local repo we need to commit
+
+git commit -m "valid msg"
+
+Error :- 
+Author identity unknown *** Please tell me who you are. 
+Run git config --global user.email "you@example.com" 
+git config --global user.name "Your Name" 
+to set your account's default identity. 
+Omit --global to set the identity only in this repository.
+
+4.Remote repository :
+-------------------------
+To transfer the file from local repo to remote repo we need to push the local
+changes to remote ...
+
+git push origin <branch-name>
+
+git remote add origin <url> 
+
+
+
+
+
+
+
+

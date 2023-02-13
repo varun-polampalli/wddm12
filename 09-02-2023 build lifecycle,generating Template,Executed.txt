@@ -1,0 +1,102 @@
+Agenda :
+--------------
+1.Maven Build Life cycle
+2.How to Generate a Maven Project Template
+
+1.Maven Build Lifecycle :
+------------------------------
+1.mvn validate :- It will validate the Project structure..
+2.mvn clean :- It will clean the cache of the previous projects
+3.mvn compile :-
+
+High Level Lang into Low level Lang 
+
+4.mvn test :- To check whether the source code is Working Properly
+              not (Developer will do the unit testing)
+
+5.mvn Package :- By using this goal we are going Build our Source 
+                 code or Convert the source code into Executable 
+Formates.....
+
+Jar/War
+
+6.mvn install : It will install the jar and Dependencies in the 
+                local repository called .m2
+
+7.mvn site : It will generate a website Related Documenetaion 
+              for our Project...
+
+8.mvn Deploy : It will Deploy the Artifacts to tomcat like servers
+
+Steps To Build a Maven Project :
+-------------------------------------
+Step 1 :- We Need to Generate a Project Template..
+
+mvn archetype:generate 
+
+i) Project Template id : 2005
+ii)Version : 8(1.4)
+iii)Group-id : The company or Team name or id We need To specify 
+
+skillrary
+iv)Artifact-id : Here we need to Provoide a Project name...
+
+Artifacts :Artifacts is Higly associcated And related to specific Methods 
+or Processes of Development ..
+Methods or processes can be project plans,bussiness cases... 
+
+------------------------------------------------------------------
+wddm12
+      --src pom.xml
+                 --> cd src 
+                         main test 
+                              cd main 
+                                   java 
+                                      skillrary(groupid) 
+         /wddm12/src/main/java/skillrary
+
+
+1.mvn validate
+2.mvn clean
+3.mvn compile : It will generate a source Documenetaion in target
+
+.java file into .class 
+
+4.mvn test : It will Perform a unit test..
+
+Test Reports will get Generated inside a target/surfire-reports
+
+5.mvn package :- By using this we are going to Generate a execuatble file 
+                 (it will build).
+
+It will generate a .jar file inside a target direct..
+
+6.mvn install : It will download the dependencies and jar file..
+
+cd /root/.m2
+
+Jar file Location : 
+---------------------
+
+/root/.m2/repository/skillrary/wddm12/1.0-SNAPSHOT
+
+7.mvn site :- It will Generate a Site Documenation..
+
+
+Thank you for your valuable time
+
+tata bye bye will catch you tommarow 
+
+if ur having any dought please ping me 
+
+Assignment :
+----------------
+1.Make a note of Genarting a maven project and a build life cycle
+
+
+
+
+
+
+
+

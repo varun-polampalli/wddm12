@@ -1,0 +1,233 @@
+Git (Global information tracker) :- Distributed Version control system
+
+developer :- commiting
+
+1.git init :- when ever we are going to start with new project at that time we
+             will Use git init to  create a local git repository.  
+
+syntax :- git init or git init <repo-name> 
+
+2.git add :- it is used to add a file into stagging area (index or mock server) 
+          
+
+Git Repository Has a 4 parts :- 
+--------------------
+1.working directory :- where exactly we were working on 
+
+touch :- create a file
+
+2.Stagging area :- it is like a mock server where our other developers are 
+                   going to review the source code ...
+
+git add <file-name> or git add .
+ 
+3.local repository :- it is a git local repo (.git) where all the updates of local
+                      will get stored ...
+
+to add a file from stagging area to local repo we need to use
+
+i)Before commiting the chnages first we need to configure user name and 
+   mail id of the user(developers or test eng) 
+
+user name :- git config --global user.name "user-name"
+
+mail id :- git config --global user.email "user-mail-id" 
+
+to check that user name and mail id are configured or not we need to use 
+
+i)git config --global user.name 
+
+ii)git config --global user.email 
+
+git commit -m "msg" 
+
+4)Remote repository :
+------------------------
+The remote repo is nothing but a central server where we can store our data
+
+Note :- 
+------------
+If we are created a git local repository by using git init we need to add a
+local repository to remote repository 
+
+git remote add origin <remote repo-url>  
+
+i)If we want to check whether a local repo is added to remote repository or not
+ 
+ git remote -v 
+
+*) To add the local changes to remote we need to push the local changes .
+
+git push origin <branch-name>
+
+
+1.git init 
+2.git add 
+3.git config --global user.name "user-name"
+
+  git config --global user.email "user-email" 
+
+4.git commit -m "msg" :- To add a record to local repo (to create a record)
+
+5.git remote add origin <url> :- to connect local and remote git repo 
+
+6.git push origin <branch-name> :- to add a local changes to remote repository..
+Scenrio :-
+-----------------
+We have joined a new company in between the project at that time our manager 
+will give a git repoistory url ...
+
+
+Copy the git remote(github) repository into our local system..
+
+1.git clone <url> :- by using this we are going to download or copy the github 
+                     like repository to local system
+
+
+========================================================================
+For accessing a github like remote repository we are having two ways 
+
+1.by using 
+git clone <url> :- we are going to copy the execting repository
+
+2.git init :- by using this 1st we will create a local repo 
+ then we will add a 
+                local repository to remote repoistory ...
+
+============================================================================
+1.git init         
+
+it is used to create a local repository in a initial stage of project 
+and it is 1st command which we were using when we are going to start with a
+project ..
+
+2.git clone :- already repositoy will be present by using git clone we are going
+               to download the repository into our system... 
+
+============================================================================
+1.git clone <url> :- to copy the execting remote remote repository 
+
+2.cd <repo> :- Used to switch a git repository..
+
+3.touch :- create a file 
+
+4.git status :- to check the status of the branch or to check whether the files 
+                 are in tracking mode or not ...
+
+5.
+
+1.Working directory 
+
+touch files
+
+2.Staging area 
+
+git add <file> :-  is used to add a file from working directory to staging 
+area..
+
+3.Local repository :- to store a records in our local repositry called .git 
+
+git commit -m "msg"
+
+4.Remote repository :- to push a local changes to remote repository
+-=---------------
+
+git push origin <branch-name>
+======================================================
+
+Branches : 
+----------------------
+Parent branchs
+child branches 
+
+Repository we are going to split them as a branches 
+
+tree :- we will be having branches 
+
+Flipkart :- 
+
+singup :- dev1
+login :- dev2
+cart :- dev3
+search :- dev4 
+favouites :- dev5
+buynow :- dev6
+account :- dev7  
+
+1.How to create a branch :
+-----------------------------
+git branch <branch-name>
+
+2.To check or list the branches :- 
+
+git branch 
+
+strike :- *
+non-strike :-  
+
+3.To Switch from one branch to another or to change a barnch
+
+synatx :- git checkout <branch-name> 
+ 
+                   or 
+
+          git switch <branch-name>
+
+Main/master :- these all are the parent barcnhes 
+
+feature :- it is child barnches 
+
+4.
+
+touch files 
+
+git add :- to add a files into staging area
+
+git commit -m "msg" :- to store a version of the files or records ..
+
+5.to check a log history
+
+git log or git log --oneline 
+
+HEAD :- Indicating that it is a recent commit 
+
+main 
+  feature
+  singup 
+  login 
+
+5.Now we will add a changes of feature branch to main branch :
+-----------------------------------------------------------------
+fast forward Merge :- 
+
+git merge <branch-name>
+
+6.push the local changes to remote 
+
+git push origin <branch-name>
+
+7.how to get a remote changes to local 
+
+git pull origin <branch-name> :- to get a changes from remote to local 
+
+
+git push :- to add a local changes to remote
+
+git pull :- to ger a remote changes to local 
+
+
+Assignment :
+-------------------
+1.use of git
+2.difference between git push and pull
+3.what is the use of commits
+4.With an example of repository structure explain the commands 
+
+
+
+
+
+
+
+
+

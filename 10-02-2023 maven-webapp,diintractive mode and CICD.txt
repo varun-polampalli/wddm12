@@ -1,0 +1,90 @@
+Agenda :
+-------------
+1.Generating war file  by using maven
+2.Generating maven project in Di-inractive mode
+
+
+
+1.Generating war file  by using maven:
+-----------------------------------------
+mvn archetype:generate : java
+
+web archive file
+
+
+jar and war 
+
+
+mvn archetype:generate -DarchetypeArtifactId=maven-archetype-webapp
+
+1.mvn validate :- To validate the Project Structure..
+
+2.mvn compile 
+
+3.mvn package
+
+4.mvn install
+
+
+3 Types of Repository :
+----------------------------
+1.local repository
+2.Remote 
+3.Central
+
+
+Generating Maven project in Di-intractive mode:
+
+
+mvn archetype:generate -DgroupId=siddu-ajit -DartifactId=revansiddu -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+Maven : Pom.xml and build life cycle and java
+
+==========================================================================
+===================================================================================
+Jenkins :
+-------------
+
+Continuous Integration and Continuous Delivery/Deployment :
+------------------------------------------------------------------
+
+CI
+
+Source code and build the application 
+
+CD:- Continous Delivery 
+
+We are going test a final round of testing 
+
+CD :- Continous Deployment 
+
+Once the application is working fine and once we get final Approvals ffrom the 
+Management we are going to deploy the application in prodution server....
+
+CI tools Availbale in the Market :
+-----------------------------------------
+1.Jenkins: Free and opensource Software,No need to pay for accessing the features
+Plugins 
+
+Opensource and Licensed
+
+2.Gitlab :- It is also a free tool but if we want to access some features we need to 
+pay for that and for agent also we need to pay..
+
+3.TravisCI : It is also free but we need to pay for the features..
+
+4.Bit Bucket :- Bitbucket platform only it wil support...
+
+5.Bamboo :- It is A paid version .....
+
+
+
+
+
+
+
+
+
+
+
+

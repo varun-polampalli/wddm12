@@ -1,0 +1,198 @@
+Agenda :
+--------------
+1.cronjob
+2.Git
+
+
+
+Flipkart 
+
+singup
+login
+search
+cart
+favourite
+buynow
+account
+
+500 lines of code 
+
+errors
+
+Functions :- Group of statements it will get execute when ever
+ it is called or invoked ...
+ 
+===============================================
+season=bigbillion
+singup()
+{
+echo "hello everyone welcome to flipkart"
+echo $FUNCNAME
+}
+
+login()
+{
+season=republic
+echo "Login in progress"
+echo $FUNCNAME
+}
+
+search()
+{
+season=yearend
+echo "Thank you for using"
+echo $FUNCNAME
+}
+
+singup
+login
+search
+
+======================================================================
+Cronjob :
+-----------
+Alarm :- scheduled 
+
+Mobile :- Message scheduling
+
+gmail :- schedule 
+
+Update :- daily 4PM you need to check for the update if any updates 
+          automatically complete that update....
+
+
+We will be running one application , i want a logs on daily basis at 
+5pm
+
+Based on the timings it needs to generate the logs and store it in one file. 
+
+Steps to schedule the cronjobs :
+------------------------------------
+step 1 :- We need to create on shell script for execting the jobs on bases 
+          of sheduled timings...
+
+Output redirection
+
+echo hello good morning >> wishes.txt
+
+nano cron.sh
+
+#!/bin/bash
+
+date >> /home/ec2-user/cron/logs.txt
+
+each and every miniute it needs to execute the jobs 
+
+step 2 :- We need to schedule the jobs...
+
+crontab :- by using this we are going to shedule the jobs
+
+For scheduling we need to use
+
+crontab -e :- it will open crontable here we can shedule the jobs 
+
+* * * * * /entire path 
+
+min hours day(date) month of the year day of the week
+
+* :- min
+* :- hours
+* :- day
+* :- moy
+* :- wod
+
+* * * * * /home/ec2-user/cron/cron.sh
+
+step 3 :- Give the permission for shell script 
+
+chmod 777 cron.sh
+
+To list the cron jobs :
+------------------------
+
+crontab -l
+
+To check the logs :
+---------------------
+
+tail -f <file.txt>
+
+===============================================================
+File Reading Functionalitys:
+----------------------------------
+
+read -p "enter file name : " filename
+
+while read line 
+
+do 
+
+echo $line
+
+done < $filename
+
+To check whether file is writable or not :
+-----------------------------------------------
+
+read -p "enter the file name : " filename
+
+if [ -w $filename ]
+then 
+echo "$filename is writable"
+else
+
+echo "$filename is not writeable"
+fi
+
+To check wether file is Executable or not :
+----------------------------------------------
+
+read -p "enter the file name : " filename
+
+if [ -x $filename ]
+then 
+echo "$filename is executable"
+else
+
+echo "$filename is not executable"
+fi
+
+
+
+
+
+
+
+
+
+
+task :
+-----------
+1.you need to shedule the cron job it needs to execute today evening 9PM
+
+linux :- sample examples  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
